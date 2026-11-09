@@ -1,0 +1,11 @@
+Order ID,Order Date,Ship Mode,Customer ID,Customer Segment,Region,State,City,Category,Sub-Category,Product Name,Sales,Quantity,Discount,Profit,Ship Date
+ORD-000001,2022-05-11,First Class,CUST-0075,Consumer,West,Oregon,Greenville,Office Supplies,Labels,Shipping Labels,110.76,4,0.05,33.6,2022-05-13
+ORD-000002,2025-02-04,Standard Class,CUST-0764,Consumer,Central,Ohio,Riverton,Technology,Machines,Laser Printer,93.41,1,0.1,17.34,2025-02-10
+ORD-000003,2024-08-14,Second Class,CUST-0419,Consumer,Central,Missouri,Riverton,Technology,Machines,Laser Printer,249.94,2,0.25,-6.0,2024-08-18
+ORD-000004,2023-10-04,Standard Class,CUST-0793,Corporate,West,Washington,Greenville,Furniture,Furnishings,Wall Clock,419.51,6,0.0,93.89,2023-10-09
+ORD-000005,2023-09-25,Standard Class,CUST-0333,Consumer,West,Washington,Greenville,Office Supplies,Labels,Address Labels,10.01,1,0.15,1.88,2023-10-01
+ORD-000006,2025-06-08,Standard Class,CUST-0667,Consumer,East,Virginia,Riverton,Technology,Phones,Orbit Conference Phone,31.68,1,0.2,2.16,2025-06-14
+ORD-000007,2022-05-06,Standard Class,CUST-0265,Consumer,Central,Missouri,Greenville,Office Supplies,Storage,Storage Box,20.42,3,0.3,1.72,2022-05-11
+ORD-000008,2024-10-15,Same Day,CUST-0356,Consumer,Central,Ohio,Greenville,Furniture,Tables,Meeting Table,546.56,6,0.1,74.28,2024-10-16
+ORD-000009,2022-10-22,Standard Class,CUST-0278,Consumer,Central,Ohio,Brookfield,Office Supplies,Labels,File Labels,65.97,5,0.15,9.84,2022-10-27
+ORD-000010,2022-05-18,Standard Class,CUST-0438,Consumer,East,New Jersey,Fairfield,Office Supplies,Storage,Desktop Organizer,63.51,4,0.2,5.1,2022-05-23
