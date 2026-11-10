@@ -1,5 +1,5 @@
 # Internship report
 
-The completed PDF report is included in the downloadable project ZIP at `reports/Internship_Task_03_Report.pdf`. Copy that file from the ZIP into this folder to keep the repository and local submission package in sync.
+The final PDF report has not yet been uploaded to this repository.
 
-The report still contains a `[Student Name]` placeholder that must be replaced with the student's official name before submission.
+The report should identify the student as **Ateeb Mustapha**, use Microsoft Power BI as the selected BI platform, and include genuine screenshots from the running Streamlit dashboard and Power BI Desktop report.
