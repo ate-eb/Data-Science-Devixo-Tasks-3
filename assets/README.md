@@ -1,3 +1,5 @@
 # Visual assets
 
-The complete chart images, code screenshots, and dashboard preview are included in the downloadable project ZIP under `assets/`. The GitHub repository contains the source code and documentation; copy the ZIP's `assets/` folder here to include the image files.
+Generated chart images and genuine application screenshots have not yet been uploaded.
+
+Place chart exports in `assets/charts/` and genuine screenshots from the running Streamlit application and Power BI Desktop in `assets/screenshots/`. Do not label a static dashboard mock-up as a live application screenshot.
