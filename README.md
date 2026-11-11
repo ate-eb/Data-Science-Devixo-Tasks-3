@@ -1,81 +1,134 @@
-# Devixo Solutions — Business Intelligence & Dashboard Development
+# Retail Sales Analysis & Business Intelligence Dashboard
 
-**Internship:** Data Science Internship — Week 3, Task 03  
-**Student:** Ateeb Mustapha  
-**Selected BI platform:** Microsoft Power BI  
-**Interactive application:** Streamlit dashboard  
-**Dataset:** Simulated retail sales dataset (10,000+ source rows; cleaned transaction count: 10,000)
+**Devixo Solutions — Data Science Internship**  
+**Week 3 | Task 03: Business Intelligence & Dashboard Development**
 
-## Project objective
-Transform business transaction data into actionable insights through cleaning, feature engineering, KPI calculation, SQL analysis, and an interactive dashboard.
+**Developed by:** Ateeb Mustapha  
+**BI Tool:** Microsoft Power BI Desktop  
+**Dataset:** Simulated Retail Sales Dataset
 
-## Dataset note
-The dataset is synthetic and was generated for this educational project. It is not real company or customer data. The full project dataset is expected at `data/raw/retail_sales_raw.csv`; the repository currently includes only a small sample CSV, so the full dataset must be added before running the analysis.
+---
 
-## Features
-- Data cleaning: duplicate removal, missing city handling, date parsing.
-- Feature engineering: year, month, year-month, profit margin, discount band, profitability flag, delivery days.
-- KPIs: sales, profit, profit margin, orders, customers, average order value.
-- SQL analysis using SQLite.
-- Interactive Streamlit dashboard with filters and downloadable filtered data.
-- Monthly revenue trend and baseline linear trend projection.
-- Power BI-ready cleaned CSV, DAX measures, and report-page implementation guide.
+## Project Overview
 
-## Technologies
-Python, Pandas, NumPy, Matplotlib, Plotly, Streamlit, SQLite/SQL, Microsoft Power BI.
+This project focuses on transforming raw retail sales data into meaningful business insights using Microsoft Power BI.
 
-## Folder structure
+An interactive sales performance dashboard was developed to analyse revenue, profitability, order volume, product categories, regional performance, shipping methods, and product sub-categories.
+
+The dashboard presents key business metrics through KPI cards and visualisations, making it easier to understand sales trends and compare business performance.
+
+## Dashboard Preview
+
+The Power BI dashboard provides a consolidated view of retail sales performance, including:
+
+- Total Sales
+- Total Profit
+- Total Orders
+- Profit Margin
+- Sales by Year
+- Sales by Product Category
+- Profit by Region
+- Sales by Shipping Mode
+- Sales by Product Sub-Category
+
+## Key Performance Indicators
+
+The completed dashboard displays the following results:
+
+| Metric | Result |
+|---|---:|
+| Total Sales | $2,454,256.96 |
+| Total Profit | $202,386.39 |
+| Total Orders | 10,000 |
+| Profit Margin | 8.25% |
+
+*These figures are from the live Power BI dashboard.*
+
+## Tools & Technologies
+
+- **Microsoft Power BI Desktop** — Dashboard development and visualisation
+- **Power Query** — Data cleaning and preparation
+- **DAX** — Calculated measures and business metrics
+- **CSV** — Retail sales dataset
+
+## Data Preparation
+
+The retail sales dataset was imported into Power BI and prepared for analysis using Power Query.
+
+The preparation workflow included:
+
+- Reviewing column names and data types
+- Checking date and numerical fields
+- Inspecting missing values
+- Reviewing duplicate records
+- Preparing the data for dashboard visualisations
+
+## Dashboard Insights
+
+The dashboard highlights several observations:
+
+1. Furniture contributes the highest sales among the displayed product categories.
+2. Technology is the second-highest sales category.
+3. West records the highest profit among the four regions.
+4. South records the lowest regional profit.
+5. Standard Class accounts for the largest share of sales by shipping mode.
+6. The annual sales chart allows comparison across 2022–2025.
+7. The sub-category chart highlights differences in sales contribution across products.
+
+## Repository Structure
+
 ```text
-data/
-  raw/retail_sales_raw.csv
-  processed/retail_sales_clean.csv
-  retail_sales.db
-src/
-  analysis.py
-  dashboard.py
-sql/analysis_queries.sql
-powerbi/PowerBI_Guide_and_DAX.md
-reports/
-assets/
-  charts/
-  screenshots/
-docs/
-README.md
+Data-Science-Devixo-Tasks-3/
+│
+├── Ateeb_Mustapha_BI_Dashboard.pbix
+├── retail_sales_raw.csv
+│
+├── data/
+│   └── raw/
+│
+├── assets/
+│   └── screenshots/
+│
+├── docs/
+│
+├── reports/
+│
+├── sql/
+│
+├── src/
+│
+└── README.md
 ```
 
-## Setup and run (Windows)
-1. Install Python 3.10 or newer and Microsoft Power BI Desktop.
-2. Download or clone this repository and open the project folder in VS Code or File Explorer.
-3. Open Command Prompt or the VS Code terminal in the project folder.
-4. Create a virtual environment: `py -m venv .venv`
-5. Activate it: `.venv\\Scripts\\activate`
-6. Install dependencies: `python -m pip install -r requirements.txt`
-7. Make sure the full synthetic dataset is present at `data/raw/retail_sales_raw.csv`.
-8. Run the analysis: `python src/analysis.py`
-9. Launch the interactive application: `python -m streamlit run src/dashboard.py`
-10. Open the local URL printed in the terminal (usually `http://localhost:8501`).
+The `.pbix` file contains the editable Power BI dashboard, while the CSV file contains the retail sales dataset.
 
-## Power BI report
-1. Run the Python analysis first so that `data/processed/retail_sales_clean.csv` exists.
-2. Open Power BI Desktop.
-3. Select **Get data → Text/CSV** and choose the cleaned CSV.
-4. Follow `powerbi/PowerBI_Guide_and_DAX.md` to create the DAX measures and report pages.
-5. Save the completed report as `powerbi/Devixo_Business_Intelligence.pbix`.
+The `src/` and `sql/` folders contain supplementary project materials from the earlier analysis workflow.
 
-Power BI is the selected BI platform for this submission; Tableau is not used.
+## How to Open the Dashboard
 
-## Results snapshot from the completed analysis run
-- Total sales: $2,451,274.78
-- Total profit: $202,102.15
-- Profit margin: 8.2%
-- Unique orders: 10,000
-- Unique customers: 800
+1. Clone or download this repository.
+2. Install Microsoft Power BI Desktop.
+3. Open `Ateeb_Mustapha_BI_Dashboard.pbix`.
+4. If Power BI requests the source file, locate `retail_sales_raw.csv` and update the data source path if necessary.
+5. Refresh the data if required.
+6. Explore the dashboard visuals and available filters.
 
-## Screenshots and report
-Live Streamlit and Power BI screenshots have not yet been captured. Save genuine screenshots in `assets/screenshots/`; do not use the static dashboard preview as evidence of a running application. The final PDF report should identify the student as **Ateeb Mustapha** and include the actual application screenshots.
+## Project Objective
 
-## Forecast limitation
-The bonus forecast is a simple linear trend baseline based on monthly sales. It is intended as a demonstration, not a production forecast. It does not model holidays, promotions, economic conditions, or other external factors.
+The main objective of this project is to demonstrate how business intelligence tools can transform raw transactional data into an interactive reporting solution.
 
-## Source
-Devixo Solutions, Week 3 Tasks — Data Science Internship, Task 03: Business Intelligence & Dashboard Development (brief supplied by the student).
+By combining data preparation, DAX calculations, and visual analytics, the dashboard provides a clear overview of retail business performance and supports data-driven decision-making.
+
+## Dataset Disclaimer
+
+The dataset used in this project is simulated and intended for educational purposes. It does not represent actual company transactions or customer information.
+
+## Author
+
+**Ateeb Mustapha**  
+Data Science Internship — Devixo Solutions  
+Week 3, Task 03
+
+---
+
+**Repository:** [Data-Science-Devixo-Tasks-3](https://github.com/ate-eb/Data-Science-Devixo-Tasks-3)
